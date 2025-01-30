@@ -1213,7 +1213,7 @@
 }
 /** about section **/
  .about {
-     background: url(../images/about_bg.png);
+     background: url(../images/ludobg.jpeg);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      margin-top: -225px;
@@ -1460,7 +1460,7 @@
 /** end We_are section **/
 /** contact section **/
  .contact {
-     background: url(../images/contact.jpg);
+     background: url(../images/ludo1.jpeg);
      padding: 85px 0px;
      background-size: 100% 100%;
      background-repeat: no-repeat;
