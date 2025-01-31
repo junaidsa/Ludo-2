@@ -1227,7 +1227,7 @@
      position: absolute;
      width: 208px;
      content: "";
-     background: url(../images/3.png);
+     background: url(../images/dana.avif);
      background-repeat: repeat;
      height: 444px;
      background-repeat: no-repeat;
@@ -1242,7 +1242,7 @@
      position: absolute;
      width: 208px;
      content: "";
-     background: url(../images/3.png);
+     background: url(../images/dana.avif);
      background-repeat: repeat;
      height: 444px;
      background-repeat: no-repeat;
@@ -1854,4 +1854,9 @@
      left: 10px;
      top: inherit;
      bottom: 10px;
+}
+@media (max-width: 576px) {
+    .navbar {
+        display: block !important;
+    }
 }
