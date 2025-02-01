@@ -92,7 +92,7 @@
     
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item cta-btn">
-                            <a class="nav-link btn btn-outline-primary" href="./login.html">Sign in</a>
+                            <a id="authButton" class="nav-link btn btn-outline-primary" href="./login.html">Sign in</a>
                         </li>
                     </ul>
                 </div>
@@ -385,6 +385,15 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
+         // Get the current page's URL
+    const currentUrl = window.location.href;
+    
+    // Check if the URL contains ?play
+    if (currentUrl.includes("?play")) {
+        // Change button text to "Play"
+        document.getElementById("authButton").textContent = "Play Now";
+        document.getElementById("authButton").href = "./play.html"; // Optional: Change link to play page
+    }
         $(document).ready(function () {
             // Ensure dropdowns work on mobile
             $('.dropdown-toggle').click(function () {
