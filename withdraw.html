@@ -99,6 +99,51 @@ input[type="file"]::file-selector-button {
   cursor: pointer;
   margin-right: 1em;
 }
+
+.stat-box {
+        background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Push image to the right */
+        transition: all 0.3s ease-in-out;
+    }
+    .stat-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+    .stat-box .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .stat-box .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #555;
+    }
+    .stat-box .value {
+        font-size: 32px;
+        font-weight: bold;
+        color: #28a745;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.3s ease-in-out;
+    }
+    .stat-box .value:hover {
+        transform: scale(1.05);
+    }
+    .stat-box .value svg {
+        color: #28a745;
+    }
+    .stat-box img {
+        width: 60px; /* Adjust image size */
+        height: 60px;
+        object-fit: contain;
+    }
+
     </style>
     <!-- loader  -->
     <div class="loader_bg">
@@ -157,18 +202,23 @@ input[type="file"]::file-selector-button {
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10 offset-md-1">
                     <div class="clients_box text-center">
-                        <h3>Send Money, Earn Coins!</h3>
-                        <span><i class="fa fa-quote-left"></i> Buy Coins, Boost Your Experience! <i class="fa fa-quote-right"></i></span>
-<p>Scan the payment QR code, upload the proof, and receive coins instantly to enjoy your game!</p>
-                        <p>Enjoy endless fun by earning coins and enhancing your Ludo game experience!</p>
+                        <h3>Withdraw Your Earnings</h3>
+                        <div class="stat-box card">
+                            <div class="content">
+                                <div class="title">Your Balance</div>
+                                <div class="value">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                                      </svg> 552.00
+                                </div>
+                            </div>
+                            <img src="./images/3.png" alt="Balance Icon">
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-md-12 m-4">
-                    <img src="./images/qr.jpeg" class="qr-image">
-                </div>
+              
             </div>
 
         </div>
@@ -182,7 +232,7 @@ input[type="file"]::file-selector-button {
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h3>Upload Proof</h3>
+                        <h3>Withdraw Request</h3>
                     </div>
                 </div>
             </div>
@@ -198,16 +248,10 @@ input[type="file"]::file-selector-button {
                                         <input class="contactus" placeholder="Account Holder Name" type="text" name="Name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Transaction ID" type="text" name="trancation id">
+                                        <input class="contactus" placeholder="UPI ID" type="text" name="upi_id">
                                     </div>
                                     <div class="col-sm-12">
                                         <input class="contactus" placeholder="Amount" type="number" name="amount">
-                                    </div>
-                                    <div class="col-sm-12 m-4">
-                                        <label for="avatar">Choose a proof picture:</label><br>
-                                        <input type="file"
-                                            name="avatar"  id="proof-upload"
-                                            accept="image/png, image/jpeg">
                                     </div>
                                     <div class="col-sm-12">
                                         <button class="send">Send</button>
@@ -256,43 +300,7 @@ input[type="file"]::file-selector-button {
                                     </ul>
                                 </div>
                             </div>
-                                <div class="address">
-                                    <h3>instagram </h3>
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-4 pa_right hhh">
-                                            <div class="insta_img">
-                                                <figure><img src="images/f1.jpg" alt="#" /></figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 pa_right hhh">
-                                            <div class="insta_img">
-                                                <figure><img src="images/f2.jpg" alt="#" /></figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 pa_right hhh">
-                                            <div class="insta_img">
-                                                <figure><img src="images/f3.jpg" alt="#" /></figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 pa_right">
-                                            <div class="insta_img">
-                                                <figure><img src="images/f4.jpg" alt="#" /></figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 pa_right">
-                                            <div class="insta_img">
-                                                <figure><img src="images/f1.jpg" alt="#" /></figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 pa_right">
-                                            <div class="insta_img">
-                                                <figure><img src="images/f2.jpg" alt="#" /></figure>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
@@ -324,21 +332,6 @@ input[type="file"]::file-selector-button {
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        // Handle image file preview
-        document.getElementById('proof-upload').addEventListener('change', function (event) {
-            const file = event.target.files[0];
-            const previewImage = document.getElementById('preview-image');
-    
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    previewImage.src = e.target.result;
-                }
-                reader.readAsDataURL(file);
-            } else {
-                // Reset to default image if no file selected
-                previewImage.src = "images/banner.jpg";
-            }
-        });
+        // Handle image file previe
     </script>
 </html>
