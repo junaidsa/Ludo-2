@@ -1252,7 +1252,7 @@
 }
  .about .titlepage {
      text-align: center;
-     padding-bottom: 60px;
+     /* padding-bottom: 60px; */
 }
  .about .about-box h3 {
      font-size: 30px;

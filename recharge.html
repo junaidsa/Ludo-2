@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Ludo</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    
+    <style>
+        .top_layer2::before {
+    position: absolute;
+    width: 208px;
+    content: "";
+    background: url(./images/3.png);
+    background-repeat: repeat;
+    height: 444px;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: -312px;
+    z-index: 999;
+}
+        .top_layer::before {
+    position: absolute;
+    width: 208px;
+    content: "";
+    background: url(./images/3.png);
+    background-repeat: repeat;
+    height: 444px;
+    background-repeat: no-repeat;
+    top: -131px;
+    text-align: left;
+    float: left;
+}
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand img {
+    width: 100px;  /* Adjust as needed */
+    height: 80px;
+    max-width: 100%;
+}
+        .navbar-toggler {
+            border: none;
+            outline: none !important;
+        }
+        @media (max-width: 576px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar-nav .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+        .clients .titlepage {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.qr-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 1em 1.5em;
+  border-width: 0;
+  border-radius: 1rem;
+  background-color: #002aeb;
+  color: #FFFFFF;
+  font-weight: bold;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+  margin-right: 1em;
+}
+    </style>
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header role="banner">
+        <section class="navbar navbar-expand-sm navbar-light bg-light p-0">
+            <div class="container-fluid">
+                <!-- Navbar Brand (Logo) -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/logo-removebg-preview.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                        aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!-- This is the hamburger menu -->
+                </button>
+    
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item cta-btn">
+                            <a class="nav-link btn btn-outline-primary" href="#">Play Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    </div>
+    <!-- end how_it -->
+         <!-- clients -->
+    <div id="testimonial" class="clients top_layer2 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Ludo Game!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="clients_box text-center">
+                        <h3>Send Money, Earn Coins!</h3>
+                        <span><i class="fa fa-quote-left"></i> Buy Coins, Boost Your Experience! <i class="fa fa-quote-right"></i></span>
+<p>Scan the payment QR code, upload the proof, and receive coins instantly to enjoy your game!</p>
+                        <p>Enjoy endless fun by earning coins and enhancing your Ludo game experience!</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 m-4">
+                    <img src="./images/qr.jpeg" class="qr-image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end clients -->
+    <!-- end We are -->
+    <!-- contact -->
+    <div id="contact_us" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h3>Upload Proof</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="white_bg">
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="contact">
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input class="contactus" placeholder="Account Holder Name" type="text" name="Name">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input class="contactus" placeholder="Transaction ID" type="text" name="trancation id">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input class="contactus" placeholder="Amount" type="number" name="amount">
+                                    </div>
+                                    <div class="col-sm-12 m-4">
+                                        <label for="avatar">Choose a proof picture:</label><br>
+                                        <input type="file"
+                                            name="avatar"  id="proof-upload"
+                                            accept="image/png, image/jpeg">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button class="send">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="rable-box">
+                            <figure><img id="preview-image" src="images/banner.png" alt="#" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+    <!--  footer -->
+    <footer>
+        <div class="footer top_layer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="address">
+                                    <h3>Menu</h3>
+                                    <ul class="Menu_footer">
+                                            <li class="active"> <a href="index.html">Home</a> </li>
+                                            <li> <a href="#about">About</a> </li>
+                                            <li> <a href="#casino">Features</a> </li>
+                                            <li> <a href="#testimonial">Testimonial</a> </li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="address">
+                                    <h3>Links</h3>
+                                    <ul class="Links_footer">
+                                        <li> <a href="#booktable">Contact Us</a> </li>
+                                        <li> <a href="#booktable">Login</a> </li>
+                                        <li> <a href="#booktable">Register</a> </li>
+                                        <li> <a href="#booktable">Play Now</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                                <div class="address">
+                                    <h3>instagram </h3>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 pa_right hhh">
+                                            <div class="insta_img">
+                                                <figure><img src="images/f1.jpg" alt="#" /></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 pa_right hhh">
+                                            <div class="insta_img">
+                                                <figure><img src="images/f2.jpg" alt="#" /></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 pa_right hhh">
+                                            <div class="insta_img">
+                                                <figure><img src="images/f3.jpg" alt="#" /></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 pa_right">
+                                            <div class="insta_img">
+                                                <figure><img src="images/f4.jpg" alt="#" /></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 pa_right">
+                                            <div class="insta_img">
+                                                <figure><img src="images/f1.jpg" alt="#" /></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 pa_right">
+                                            <div class="insta_img">
+                                                <figure><img src="images/f2.jpg" alt="#" /></figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="address">
+                            <h3>Subscribe to Ludo </h3>
+                            <p>eniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo</p>
+                            <input class="form-control" placeholder="Enter your email" type="type" name="Enter your email">
+                            <button class="submit-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2025 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // Handle image file preview
+        document.getElementById('proof-upload').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            const previewImage = document.getElementById('preview-image');
+    
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            } else {
+                // Reset to default image if no file selected
+                previewImage.src = "images/banner.jpg";
+            }
+        });
+    </script>
+</html>
