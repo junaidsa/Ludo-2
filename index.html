@@ -27,27 +27,45 @@
 <body class="main-layout">
     
     <style>
-        .navbar {
-            background-color: white !important;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .navbar-brand img {
-    width: 100px;  /* Adjust as needed */
+  .navbar {
+    background-color: transparent !important;
+    box-shadow: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-item a{
+    color: #fff !important;
+}
+.navbar.scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 100px;
     height: 80px;
     max-width: 100%;
 }
-        .navbar-toggler {
-            border: none;
-            outline: none !important;
-        }
-        @media (max-width: 576px) {
-            .navbar-nav {
-                text-align: center;
-            }
-            .navbar-nav .nav-item {
-                margin-bottom: 10px;
-            }
-        }
+
+.navbar-toggler {
+    border: none;
+    outline: none !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Makes the icon white */
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
     </style>
     <!-- loader  -->
     <div class="loader_bg">
