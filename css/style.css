@@ -1213,7 +1213,7 @@
 }
 /** about section **/
  .about {
-     background: url(../images/ludobg.jpeg);
+     background: url(../images/enhanced_image.jpeg);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      margin-top: -225px;
@@ -1457,10 +1457,15 @@
      justify-content: center;
      flex-wrap: wrap;
 }
+#main_slider img {
+    width: 50%; /* Full width */
+    height: auto; /* Set a fixed height */
+    object-fit: cover;
+  }
 /** end We_are section **/
 /** contact section **/
  .contact {
-     background: url(../images/ludo1.jpeg);
+     background: url(../images/banner2.jpg);
      padding: 85px 0px;
      background-size: 100% 100%;
      background-repeat: no-repeat;
@@ -1671,7 +1676,7 @@
      padding-left: 25px;
 }
  ul.Menu_footer li a:hover{
-    color: #002aeb;
+    color: #f3f3f3;
 }
  ul.Menu_footer li {
     position: relative;
@@ -1859,4 +1864,7 @@
     .navbar {
         display: block !important;
     }
+}
+.br-50{
+    border-radius: 50px;
 }

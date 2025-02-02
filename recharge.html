@@ -27,6 +27,23 @@
 <body class="main-layout">
     
     <style>
+         .qr-container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .qr-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .account-details {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
         .top_layer2::before {
     position: absolute;
     width: 208px;
@@ -87,18 +104,32 @@
     margin: 0 auto;
     max-width: 100%;
 }
-
-input[type="file"]::file-selector-button {
-  padding: 1em 1.5em;
-  border-width: 0;
-  border-radius: 1rem;
-  background-color: #002aeb;
-  color: #FFFFFF;
-  font-weight: bold;
-  transition: all .25s ease-in-out;
-  cursor: pointer;
-  margin-right: 1em;
-}
+.qr-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        .title-name{
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 1rem;
+        }
+        .qr-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .account-details {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
     </style>
     <!-- loader  -->
     <div class="loader_bg">
@@ -171,9 +202,12 @@ input[type="file"]::file-selector-button {
                         <p>Enjoy endless fun by earning coins and enhancing your Ludo game experience!</p>
                     </div>
                 </div>
-                
-                <div class="col-md-12 m-4">
-                    <img src="./images/qr.jpeg" class="qr-image">
+            </div>
+            <div class="qr-container">
+                <p class="title-name"><strong>Account Name:</strong> Mr Jamid Ansari</p>
+                <img src="./images/qr.jpeg" alt="QR Code" class="qr-image">
+                <div class="account-details">
+                    <p class="title-name"><strong>UPI ID:</strong> 8461920249@indianbank</p>
                 </div>
             </div>
 
@@ -209,12 +243,11 @@ input[type="file"]::file-selector-button {
                                     <div class="col-sm-12">
                                         <input class="contactus" placeholder="Amount" type="number" name="amount">
                                     </div>
-                                    <div class="col-sm-12 m-4">
-                                        <label for="avatar">Choose a proof picture:</label><br>
-                                        <input type="file"
-                                            name="avatar"  id="proof-upload"
-                                            accept="image/png, image/jpeg">
-                                    </div>
+                                      <div class="custom-file" style="margin: 0 18px 1rem 18px;">
+                                        <input type="file" class="custom-file-input" id="proof-upload" required>
+                                        <label class="custom-file-label" for="validatedCustomFile">Choose proof...</label>
+                                       
+                                      </div>
                                     <div class="col-sm-12">
                                         <button class="send">Send</button>
                                     </div>

@@ -64,6 +64,9 @@
     .navbar-nav .nav-item {
         margin-bottom: 10px;
     }
+    .slider_section {
+    padding-top: 50px;
+}
 }
 
     </style>
@@ -135,14 +138,15 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
                                 <div class="text-bg">
-                                    <h1>Welcome to  <br> <strong class="b_bold">Our Ludo </strong></h1>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</span>
+                                    <h1><strong>Welcome to Ludo World</strong></h1>
+                                    <span>Step into the exciting world of Ludo World, where strategy meets luck, and every roll brings you closer to victory! Challenge friends, compete with players worldwide, and relive the classic fun of Ludo  anytime anywhere.</span>
+
                                     <!-- <a href="#">Contact Us</a> <a href="#">Book Online</a> -->
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <div class="text-img">
-                                    <figure><img src="images/banner.png" /></figure>
+                                    <figure><img class="br-50" src="images/banner.png" /></figure>
                                 </div>
                             </div>
                         </div>
@@ -155,15 +159,16 @@
     </main>
     <!-- about  -->
     <div id="about" class="about">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 
                 <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
                     <div class="about-box">
-                        <h3> ABOUT US</h3>
-                        <span>all games here</span>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, aIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, aIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersdistracted by the readable distracted by the readable , a</p>
-                        <a href="#">read more</a>
+                        <h3> ABOUT US  🎲</h3>
+                        <span>Ludo World</span>
+                        <p>At Ludo World, we bring the joy of classic board games to your fingertips! Whether you're playing for fun or competing for glory, our platform offers an immersive and exciting experience for players of all skill levels.
+
+                            With stunning graphics, smooth gameplay, and real-time multiplayer action, Ludo World takes the traditional board game to the next level. Connect with friends, challenge players worldwide, and enjoy endless hours of strategic fun. Whether you're a casual player or a competitive champion, there's always a seat at the table for you.</p>
                     </div>
                 </div>
             </div>
@@ -179,8 +184,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>Game Coin Ludo</h2>
-                        <span>do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</span>
+                        <h2>Game Ludo World</h2>
+                        <span>Experience the thrill of classic Ludo like never before! Engage in exciting matches, challenge your friends, and climb the leaderboard.Get ready for endless fun and unforgettable moments in the world of Ludo. Play now and relive the joy of this timeless game.</span>
                     </div>
                 </div>
             </div>
@@ -195,7 +200,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="second-slide" src="./images/ludo3.jpeg" alt="Second slide">
+                                <img class="second-slide" src="./images/interesting-board-everyone-high-quality-format-168221693.webp" alt="Second slide">
                                 <div class="container">
                                 </div>
                             </div>
@@ -296,7 +301,7 @@
         <div class="footer top_layer ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 offset-md-1">
+                    <!-- <div class="col-md-10 offset-md-1">
                         <div class="location_section">
                             <ul class="loca">
                                 <li>
@@ -307,7 +312,7 @@
                                     <a href="#"><img src="icon/3.png" alt="#" /></a>Location </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 ">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -325,7 +330,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="address">
                                     <h3>Links</h3>
-                                    <ul class="Links_footer">
+                                    <ul class="Menu_footer">
                                         <li> <a href="#booktable">Contact Us</a> </li>
                                         <li> <a href="#booktable">Login</a> </li>
                                         <li> <a href="#booktable">Register</a> </li>
@@ -410,10 +415,9 @@
     if (currentUrl.includes("?play")) {
         // Change button text to "Play"
         document.getElementById("authButton").textContent = "Play Now";
-        document.getElementById("authButton").href = "./play.html"; // Optional: Change link to play page
+        document.getElementById("authButton").href = "./play.html";
     }
         $(document).ready(function () {
-            // Ensure dropdowns work on mobile
             $('.dropdown-toggle').click(function () {
                 if ($(window).width() < 768) {
                     $(this).next('.dropdown-menu').slideToggle();
